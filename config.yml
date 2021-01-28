@@ -1,2 +1,9 @@
 in_features: 10
 out_features: 10
+epochs: 10
+batch_size: 128
+
+data_path: './'
+train_data: 'train'
+valid_data: 'valid'
+test_data : 'test'

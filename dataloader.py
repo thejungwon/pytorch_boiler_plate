@@ -8,8 +8,11 @@ from torchvision import datasets, transforms
 
 class CustomDataset(Dataset):
     def __init__(self, data_path):
-        
         pass
+        
+
+    def __len__(self):
+        return self.data.shape[0]
         
             
 def get_loaders_fromfile(datapath, train_data, valid_data, test_data, batch_size):
