@@ -23,9 +23,8 @@ class Trainer():
         self.scheduler = scheduler
         
 
-        super().__init__()
         
-    def trainer(self, batch_size, train_loader, scaler, scheduler):
+    def trainer(self, batch_size, train_loader, scaler):
         # Set to train mode
         self.model.train()
         
